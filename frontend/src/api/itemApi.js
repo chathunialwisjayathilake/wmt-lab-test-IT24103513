@@ -5,9 +5,9 @@ const API = axios.create({
 });
 
 export const getItems = () => API.get("/items");
-export const getItemById = (id) => API.get(`/items/${id}`);
-export const createItem = (itemData) => API.post("/items", itemData);
-export const updateItem = (id, itemData) => API.put(`/items/${id}`, itemData);
-export const deleteItem = (id) => API.delete(`/items/${id}`);
+export const getItemById = (id) => API.get(`/api/items/${id}`);
+export const createItem = (itemData) => API.post("/api/items", itemData);
+export const updateItem = (id, itemData) => API.put(`/api/items/${id}`, itemData);
+export const deleteItem = (id) => API.delete(`/api/items/${id}`);
 
 export default API;
